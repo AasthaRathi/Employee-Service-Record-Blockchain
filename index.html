@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESR Blockchain</title>
+    <link rel="stylesheet" href="./public/style.css" />
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.7.1.umd.min.js"
+      type="application/javascript"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/5daa8eb347.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+  <body>
+    <div class="main-div">
+      <!-- <div class="inner-div"></div> -->
+      <div class="content-div">
+        <div class="header">
+          <h2><p class="logo">ESR-Blockchain</p></h2>
+          <!-- <a href="login.html" class="login-btn">LOGIN</a> -->
+        </div>
+        <div class="hero-section">
+          <div class="text">
+            <h1>Welcome to Employee Service Record ....</h1>
+            <p>
+              ESR - B is a Employee Service Record keeping web application which
+              is a blockchain based technology and used to provide a good
+              security and privacy to the employees of the organization.
+            </p>
+          </div>
+
+          <div class="login-form">
+            <div class="second">
+              <h2>LOGIN FORM</h2>
+              <p>Login with your details</p>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Username..."
+                autocomplete="off"
+              />
+              <input
+                type="password"
+                name="pwd"
+                id="pwd"
+                placeholder="Password"
+                autocomplete="off"
+              />
+              <button class="btn login-btn" onclick="login()">Login</button>
+              <p onclick="showForgetPasswordContainer()">Forgot Password</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="forget-password-outer-container">
+        <div class="forget-password-container">
+          <div
+            class="back-btn"
+            onclick="closeProfile('forget-password-outer-container')"
+          >
+            Back
+          </div>
+          <h2>Get Your Password Here</h2>
+          <p>
+            To get your password back in case you did not remember it or you
+            have forgotten your password, type your email in the below input box
+            and press on the get password button. You will get your password
+            again on your email address if your account exists.
+          </p>
+          <div>
+            <input type="email" name="email" id="email" />
+            <button class="get-password" onclick="getPassword()">
+              Get Password
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./public/script.js"></script>
+  </body>
+</html>
